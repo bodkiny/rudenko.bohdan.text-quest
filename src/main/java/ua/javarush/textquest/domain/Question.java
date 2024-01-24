@@ -1,5 +1,6 @@
 package ua.javarush.textquest.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,6 +12,7 @@ import java.util.List;
 @Setter
 @ToString
 @EqualsAndHashCode
+@AllArgsConstructor
 public class Question {
     private List<Answer> answers;
     private int id;
