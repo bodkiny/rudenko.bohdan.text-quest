@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="DEBUG">
+<Configuration status="INFO">
 
     <Appenders>
         <Console name="LogToConsole" target="SYSTEM_OUT">
-            <PatternLayout pattern="%highlight{[%-5level] %d{HH:mm:ss.SSS} [%t] %c{1.} %logger{36} - %msg%n}" disableAnsi="false"/>
+            <PatternLayout pattern="%highlight{[%p] %d{HH:mm:ss.SSS} [%t] %c{1.} %logger{36} - %msg%n}"
+                           disableAnsi="false"/>
         </Console>
 
         <RollingFile name="LogToRollingFile" fileName="logs/app.log"
                      filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log">
             <PatternLayout pattern="%d [%p] [%t] %c{1.} %msg%n"/>
             <Policies>
-                <TimeBasedTriggeringPolicy interval="6" modulate="true" />
+                <TimeBasedTriggeringPolicy interval="6" modulate="true"/>
                 <SizeBasedTriggeringPolicy size="1 MB"/>
             </Policies>
         </RollingFile>
     </Appenders>
 
     <Loggers>
-        <Logger name="ua.javarush.textquest" level="debug" additivity="false">
+        <Logger name="ua.javarush.textquest" level="info" additivity="false">
             <AppenderRef ref="LogToConsole"/>
         </Logger>
 
