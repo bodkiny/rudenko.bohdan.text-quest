@@ -10,10 +10,10 @@ import java.util.Map;
 import java.util.Optional;
 
 @Log4j2
-public class InMemoryJsonQuestionRepository implements Repository<Question> {
+public class InMemoryQuestionRepository implements Repository<Question> {
     private final Map<Integer, Question> idToQuestions;
 
-    public InMemoryJsonQuestionRepository(String filePath) {
+    public InMemoryQuestionRepository(String filePath) {
         idToQuestions = JsonQuestionParser.parse(filePath);
     }
 

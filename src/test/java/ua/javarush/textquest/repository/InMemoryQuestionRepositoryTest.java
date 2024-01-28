@@ -12,7 +12,7 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class InMemoryJsonQuestionRepositoryTest {
+class InMemoryQuestionRepositoryTest {
     static final String TEST_GAME_CONFIG_FILE_PATH = "src/test/resources/test-game-config.json";
 
     @Test
@@ -20,7 +20,7 @@ class InMemoryJsonQuestionRepositoryTest {
     void shouldInitializeWithCorrectData() {
         Map<Integer, Question> expectedIdToQuestions = getExpectedIdToQuestions();
 
-        Repository<Question> repository = new InMemoryJsonQuestionRepository(TEST_GAME_CONFIG_FILE_PATH);
+        Repository<Question> repository = new InMemoryQuestionRepository(TEST_GAME_CONFIG_FILE_PATH);
 
         repository.findAll().forEach(question -> assertEquals(expectedIdToQuestions.get(question.getId()), question, "Question with id " + question.getId() + " is not equal to expected"));
     }
