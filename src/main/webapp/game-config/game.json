@@ -1,0 +1,349 @@
+[
+  {
+    "answers": [
+      {
+        "id": 1,
+        "nextQuestionId": 2,
+        "text": "Look out the window"
+      },
+      {
+        "id": 2,
+        "nextQuestionId": 3,
+        "text": "Hide under the bed"
+      },
+      {
+        "id": 3,
+        "nextQuestionId": 4,
+        "text": "Grab a weapon"
+      }
+    ],
+    "id": 1,
+    "text": "You wake up in the middle of the night to a strange noise. What do you do?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [
+      {
+        "id": 4,
+        "nextQuestionId": 5,
+        "text": "Run outside"
+      },
+      {
+        "id": 5,
+        "nextQuestionId": 6,
+        "text": "Call the police"
+      },
+      {
+        "id": 6,
+        "nextQuestionId": 7,
+        "text": "Stay calm and observe"
+      }
+    ],
+    "id": 2,
+    "text": "You see a bright light and a flying saucer hovering above your house. What do you do?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [
+      {
+        "id": 7,
+        "nextQuestionId": 8,
+        "text": "Scream for help"
+      },
+      {
+        "id": 8,
+        "nextQuestionId": 9,
+        "text": "Fight back"
+      },
+      {
+        "id": 9,
+        "nextQuestionId": 10,
+        "text": "Play dead"
+      }
+    ],
+    "id": 3,
+    "text": "You hear a loud crash and a door being smashed. You see a group of aliens entering your room. What do you do?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [
+      {
+        "id": 10,
+        "nextQuestionId": 11,
+        "text": "Use it as a shield"
+      },
+      {
+        "id": 11,
+        "nextQuestionId": 12,
+        "text": "Throw it at the aliens"
+      },
+      {
+        "id": 12,
+        "nextQuestionId": 13,
+        "text": "Drop it and run"
+      }
+    ],
+    "id": 4,
+    "text": "You manage to grab a lamp as a weapon. What do you do with it?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 5,
+    "text": "You run outside, only to find yourself surrounded by more aliens. They capture you and take you to their spaceship. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [],
+    "id": 6,
+    "text": "You call the police, but they don't believe you. They think you are prank calling them and hang up on you. The aliens hear your voice and find you. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [
+      {
+        "id": 13,
+        "nextQuestionId": 14,
+        "text": "Try to communicate with them"
+      },
+      {
+        "id": 14,
+        "nextQuestionId": 15,
+        "text": "Look for an escape route"
+      },
+      {
+        "id": 15,
+        "nextQuestionId": 16,
+        "text": "Pretend to be an alien"
+      }
+    ],
+    "id": 7,
+    "text": "You stay calm and observe the aliens. They seem to be curious about you and your house. What do you do?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 8,
+    "text": "You scream for help, but no one hears you. The aliens get annoyed by your noise and zap you with a ray gun. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [
+      {
+        "id": 16,
+        "nextQuestionId": 17,
+        "text": "Keep fighting"
+      },
+      {
+        "id": 17,
+        "nextQuestionId": 18,
+        "text": "Run away"
+      },
+      {
+        "id": 18,
+        "nextQuestionId": 19,
+        "text": "Beg for mercy"
+      }
+    ],
+    "id": 9,
+    "text": "You fight back, but the aliens are stronger and faster than you. You manage to injure one of them, but the others overpower you. What do you do?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 10,
+    "text": "You play dead, hoping the aliens will leave you alone. They don't. They poke you with a stick and realize you are alive. They capture you and take you to their spaceship. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [],
+    "id": 11,
+    "text": "You use the lamp as a shield, but it is not very effective. The aliens break it with their ray guns and shoot you. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [
+      {
+        "id": 19,
+        "nextQuestionId": 20,
+        "text": "Follow them"
+      },
+      {
+        "id": 20,
+        "nextQuestionId": 21,
+        "text": "Stay behind"
+      },
+      {
+        "id": 21,
+        "nextQuestionId": 22,
+        "text": "Steal their ray gun"
+      }
+    ],
+    "id": 12,
+    "text": "You throw the lamp at the aliens, hoping to distract them. It works. They are stunned by the sudden attack and drop their ray guns. They run away to their spaceship. What do you do?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 13,
+    "text": "You drop the lamp and run, but the aliens are faster than you. They catch you and take you to their spaceship. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [
+      {
+        "id": 22,
+        "nextQuestionId": 23,
+        "text": "Say hello"
+      },
+      {
+        "id": 23,
+        "nextQuestionId": 24,
+        "text": "Ask them why they are here"
+      },
+      {
+        "id": 24,
+        "nextQuestionId": 25,
+        "text": "Tell them a joke"
+      }
+    ],
+    "id": 14,
+    "text": "You try to communicate with the aliens, hoping they are friendly. They seem to understand you and respond with some noises. What do you say to them?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 15,
+    "text": "You tell them a joke, hoping they will laugh. They don't. They get angry and attack you. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [
+      {
+        "id": 26,
+        "nextQuestionId": 27,
+        "text": "Ask them about advanced technology"
+      },
+      {
+        "id": 27,
+        "nextQuestionId": 28,
+        "text": "Inquire about their culture"
+      },
+      {
+        "id": 28,
+        "nextQuestionId": 29,
+        "text": "Request to be taken on a spaceship tour"
+      }
+    ],
+    "id": 16,
+    "text": "The aliens find your curiosity amusing. They offer to answer one question. What do you ask?",
+    "isFinal": false,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 17,
+    "text": "They reveal their plans to peacefully coexist with humans. You successfully negotiate an intergalactic alliance. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 18,
+    "text": "You inquire about their technology, and they decide to share their knowledge with you. You become an ambassador between Earth and their civilization. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 19,
+    "text": "You ask them about their culture, and they decide to share their knowledge with you. You become an ambassador between Earth and their civilization. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 20,
+    "text": "You request to be taken on a spaceship tour, and they agree. You become an ambassador between Earth and their civilization. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 21,
+    "text": "You follow them to their spaceship. They take you on a tour of the galaxy. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 22,
+    "text": "You say hello, and they respond with some noises. You successfully communicate with them. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 23,
+    "text": "You ask them why they are here, and they respond with some noises. You successfully communicate with them. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 24,
+    "text": "You tell them a joke, and they respond with some noises. You successfully communicate with them. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 25,
+    "text": "You steal their ray gun, but they catch you. They zap you with it. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [],
+    "id": 26,
+    "text": "They reveal their plans to invade Earth. You try to negotiate with them, but they don't listen. They capture you and take you to their spaceship. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [],
+    "id": 27,
+    "text": "They reveal their plans to peacefully coexist with humans. You successfully negotiate an intergalactic alliance. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  },
+  {
+    "answers": [],
+    "id": 28,
+    "text": "They reveal their plans to invade Earth. You try to negotiate with them, but they don't listen. They capture you and take you to their spaceship. You lose the game.",
+    "isFinal": false,
+    "isLoose": true
+  },
+  {
+    "answers": [],
+    "id": 29,
+    "text": "They reveal their plans to peacefully coexist with humans. You successfully negotiate an intergalactic alliance. Congratulations, you've successfully completed the game!",
+    "isFinal": true,
+    "isLoose": false
+  }
+]
