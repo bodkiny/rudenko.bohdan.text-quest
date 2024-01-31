@@ -7,11 +7,12 @@ import com.google.gson.reflect.TypeToken;
 import lombok.extern.log4j.Log4j2;
 import ua.javarush.textquest.domain.Question;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Log4j2
@@ -22,12 +23,17 @@ public final class JsonQuestionParser {
 
     public static Map<Integer, Question> parse(String path) {
         Gson gson = new Gson();
-        Type type = new TypeToken<Map<Integer, Question>>() {
+        Type type = new TypeToken<List<Question>>() {
         }.getType();
 
         Map<Integer, Question> idToQuestions = new HashMap<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
-            idToQuestions = gson.fromJson(reader, type);
+
+        try (InputStream inputStream = JsonQuestionParser.class.getClassLoader().getResourceAsStream(path);
+             InputStreamReader reader = new InputStreamReader(inputStream)) {
+            List<Question> questions = gson.fromJson(reader, type);
+            questions.forEach(question -> idToQuestions.put(question.getId(), question));
+        } catch (NullPointerException e){
+            LOGGER.error("Input stream is null. {}", e.getMessage());
         } catch (JsonIOException  | JsonSyntaxException e) {
             LOGGER.warn("Json exception while reading game config file. {}", e.getMessage());
         } catch (IOException e) {
