@@ -19,7 +19,8 @@ public class InMemoryQuestionRepository implements Repository<Question> {
 
     @Override
     public Question create(Question question) {
-        return idToQuestions.put(question.getId(), question);
+        idToQuestions.put(question.getId(), question);
+        return question;
     }
 
     @Override
@@ -30,7 +31,8 @@ public class InMemoryQuestionRepository implements Repository<Question> {
     @Override
     public Question update(Question question) {
         if(idToQuestions.containsKey(question.getId())){
-            return idToQuestions.put(question.getId(), question);
+            idToQuestions.put(question.getId(), question);
+            return question;
         } else {
             LOGGER.warn("Question with id {} was not found to update", question.getId());
             return null;
