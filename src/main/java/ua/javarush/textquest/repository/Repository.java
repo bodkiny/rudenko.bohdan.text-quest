@@ -11,6 +11,7 @@ import java.util.Optional;
 public interface Repository<T> {
     /**
      * Create entity in database
+     * Does not check if entity already exists
      *
      * @param entity entity
      * @return created entity
