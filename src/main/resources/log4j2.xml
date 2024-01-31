@@ -12,7 +12,7 @@
             <PatternLayout pattern="%d [%p] [%t] %c{1.} %msg%n"/>
             <Policies>
                 <TimeBasedTriggeringPolicy interval="6" modulate="true"/>
-                <SizeBasedTriggeringPolicy size="1 MB"/>
+                <SizeBasedTriggeringPolicy size="1 KB"/>
             </Policies>
         </RollingFile>
     </Appenders>
@@ -20,12 +20,10 @@
     <Loggers>
         <Logger name="ua.javarush.textquest" level="info" additivity="false">
             <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="LogToRollingFile"/>
         </Logger>
 
-        <Root level="info">
-            <AppenderRef ref="LogToConsole"/>
-            <AppenderRef ref="LogToRollingFile"/>
-        </Root>
+        <Root level="info"></Root>
     </Loggers>
 
 </Configuration>
